@@ -1,0 +1,18 @@
+button {
+  padding: 10px;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+tr.top {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #ccc;
+}
