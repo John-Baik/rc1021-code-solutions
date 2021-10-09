@@ -1,0 +1,70 @@
+body {
+  background-color: #3997dd;
+  height: 100vh;
+}
+
+.container {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1.text {
+  width: 150%;
+  margin-bottom: 30px;
+  font-size: 180%;
+}
+
+h2.text {
+  width: 110%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0%;
+  font-size: 140%;
+}
+
+p {
+  text-align: center;
+  width: 83%;
+  font-size: 90%;
+  opacity: 80%;
+}
+
+.row {
+  display: flex;
+}
+
+.circle {
+  display: flex;
+  border-radius: 50%;
+  background-color: white;
+  width: 110px;
+  height: 110px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.images {
+  width: 50%;
+}
+
+.col-one-third {
+  display: flex;
+  flex-basis: calc(100% / 3);
+  flex-direction: column;
+  align-items: center;
+}
+
+.text {
+  font-family: 'Lato', 'Times New Roman', Times, serif;
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
+}
