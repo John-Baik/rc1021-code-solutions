@@ -1,0 +1,120 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.column-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-transform: uppercase;
+  padding: 5px;
+  letter-spacing: 3px;
+  text-align: center;
+  font-family: 'Karla', Georgia, Times, serif;
+  font-style: normal;
+  font-size: 315%;
+  font-weight: 700;
+  margin-bottom: 0%;
+  src: url(https://fonts.gstatic.com/s/karla/v7/qkBWXvYC6trAT7zuC8m5xLtlmgzD.woff2) format('woff2');
+  unicode-range: u+0000-00ff, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd;
+}
+
+h3 {
+  width: 55%;
+  display: flex;
+  margin: 0;
+  font-size: 95%;
+  text-transform: uppercase;
+  font-family: 'Karla', Georgia, Times, serif;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/karla/v7/qkBWXvYC6trAT7zuC8m5xLtlmgzD.woff2) format('woff2');
+  unicode-range: u+0000-00ff, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd;
+}
+
+.first {
+  width: 65%;
+  opacity: 80%;
+  margin-bottom: 40px;
+  text-align: center;
+  line-height: 1.7;
+  font-family: 'Karla', Georgia, Times, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 95%;
+  src: url(https://fonts.gstatic.com/s/karla/v7/qkBbXvYC6trAT7RVLtyU5rZP.woff2) format('woff2');
+  unicode-range: u+0000-00ff, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p.second-text {
+  width: 78%;
+  margin-top: 10px;
+  opacity: 80%;
+  font-size: 88%;
+  display: flex;
+  line-height: 1.6;
+  justify-content: center;
+  font-family: 'Karla', Georgia, Times, serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/karla/v7/qkBbXvYC6trAT7RVLtyU5rZP.woff2) format('woff2');
+  unicode-range: u+0000-00ff, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd;
+}
+
+img {
+  display: flex;
+  margin-right: 8px;
+  margin-left: 30px;
+  align-items: flex-start;
+  width: 23%;
+  padding-bottom: 125px;
+}
+
+.row-text {
+  flex-basis: calc(200% / 1);
+}
+
+button {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 15px;
+  font-family: 'Karla', Georgia, Times, serif;
+  font-style: normal;
+  color: #e9724c;
+  background-color: white;
+  padding: 10px 38px;
+  font-weight: 900;
+  border-radius: 0;
+  border-color: #e9724c;
+  border-style: solid;
+  margin-bottom: 0%;
+  src: url(https://fonts.gstatic.com/s/karla/v7/qkBWXvYC6trAT7zuC8m5xLtlmgzD.woff2) format('woff2');
+  unicode-range: u+0000-00ff, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd;
+}
+
+.image-second {
+  padding-bottom: 85px;
+}
