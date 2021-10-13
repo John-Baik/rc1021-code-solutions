@@ -1,0 +1,322 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  border-bottom: whitesmoke solid 2px;
+  margin-bottom: 4rem;
+  height: 90px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 1300px;
+  align-items: center;
+  background-color: white;
+}
+
+.logo h1 {
+  font-family: 'Tiempos Headline', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #2d4465;
+  font-size: 300%;
+  padding-bottom: 15px;
+  src: url('TiemposHeadline-Regular.woff2') format('woff2');
+}
+
+.navigation a {
+  margin-left: 35px;
+  margin-right: 40px;
+  font-family: 'Avenir', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  src: url('avenir.woff2') format('woff2');
+  color: black;
+  opacity: 30%;
+  font-size: 120%;
+  text-decoration: none;
+}
+
+.button {
+  color: white;
+  padding: 13px 18px;
+  background-color: #2d4465;
+  border-radius: 5px;
+  font-family: 'Avenir', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url('avenir.woff2') format('woff2');
+  font-size: 120%;
+}
+
+.row-two {
+  width: 1300px;
+  background-image: url("images/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 640px;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 5rem;
+}
+
+.column-half {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  color: white;
+  font-family: 'Tiempos Headline', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  src: url('TiemposHeadline-Regular.woff2') format('woff2');
+}
+
+.intro-body {
+  font-family: 'Avenir', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  src: url('avenir.woff2') format('woff2');
+  line-height: 1.8;
+}
+
+.intro-header {
+  font-size: 300%;
+  margin: 0;
+}
+
+.column-half button {
+  color: white;
+  margin-top: 20px;
+  padding: 13px 18px;
+  background-color: #2d4465;
+  border-radius: 5px;
+  font-family: 'Avenir', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url('avenir.woff2') format('woff2');
+  font-size: 140%;
+  width: 40%;
+}
+
+.row-three {
+  width: 100;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.body-info {
+  text-align: center;
+  width: 37%;
+  font-family: 'Avenir', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  opacity: 45%;
+  font-size: 120%;
+  line-height: 1.8;
+  src: url('avenir.woff2') format('woff2');
+}
+
+.body-header {
+  font-size: 220%;
+  margin-bottom: 0;
+  opacity: 50%;
+  margin-top: 50px;
+  font-family: 'Tiempos Headline', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  src: url('TiemposHeadline-Regular.woff2') format('woff2');
+}
+
+.row-four {
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 90px;
+  justify-content: space-around;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  font-family: 'Avenir', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  src: url('avenir.woff2') format('woff2');
+  font-size: 130%;
+  opacity: 60%;
+}
+
+.container-body {
+  background-color: #f3f4f7;
+  margin-top: 90px;
+}
+
+.question-header {
+  margin-bottom: 6px;
+  font-size: 195%;
+  opacity: 60%;
+  font-weight: 700;
+  font-family: 'Tiempos Headline', sans-serif;
+  font-style: normal;
+  src: url('TiemposHeadline-Regular.woff2') format('woff2');
+}
+
+.schedule {
+  font-family: 'Avenir', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  opacity: 45%;
+  font-size: 102%;
+  line-height: 1.8;
+  src: url('avenir.woff2') format('woff2');
+}
+
+.navigation button {
+  color: white;
+  padding: 13px 18px;
+  background-color: #2d4465;
+  border-radius: 5px;
+  font-family: 'Avenir', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url('avenir.woff2') format('woff2');
+  font-size: 120%;
+}
+
+.container-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+
+.big {
+  display: flex;
+  justify-content: center;
+  background-color: #525351;
+}
+
+.row-final {
+  display: flex;
+  justify-content: flex-start;
+  width: 1300px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.links h1 {
+  font-family: 'Tiempos Headline', sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  color: white;
+  font-size: 350%;
+  margin: 0;
+  src: url('TiemposHeadline-Regular.woff2') format('woff2');
+  display: flex;
+  align-items: center;
+}
+
+.links-final {
+  display: flex;
+  flex-direction: column;
+  margin-left: 200px;
+  font-family: 'Avenir', sans-serif;
+  font-style: normal;
+  src: url('avenir.woff2') format('woff2');
+  color: white;
+  opacity: 100%;
+  font-size: 120%;
+  text-decoration: none;
+}
+
+.row-final p {
+  font-family: 'Avenir', sans-serif;
+  font-style: normal;
+  font-weight: ;
+  font-size: 120%;
+  opacity: 95%;
+  line-height: 1.8;
+  src: url('avenir.woff2') format('woff2');
+  color: white;
+  margin: 0;
+}
+
+.big-title {
+  text-transform: uppercase;
+}
+
+.links-final p {
+  margin: 7px;
+}
+
+.info {
+  margin-top: 30px;
+  margin-right: 250px;
+}
+
+.container-final {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  background-color: #f3f4f7;
+}
+
+.row-bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 1300px;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.contact {
+  display: flex;
+  gap: 50px;
+}
+
+.contact p {
+  color: #525351;
+  font-size: 110%;
+  opacity: 70%;
+  font-weight: 700;
+  font-family: 'Avenir', sans-serif;
+  font-style: normal;
+  src: url('avenir.woff2') format('woff2');
+}
+
+.navigation-two button {
+  color: white;
+  padding: 13px 45px;
+  background-color: #2d4465;
+  border-radius: 5px;
+  font-family: 'Avenir', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url('avenir.woff2') format('woff2');
+  font-size: 120%;
+}
