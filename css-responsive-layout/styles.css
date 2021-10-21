@@ -31,6 +31,11 @@ body {
 }
 
 /* your code 👇 here */
+@media screen and (min-width: 576px) {
+  .col-sm-half {
+    width: 50%;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .col-lg-third {
@@ -39,11 +44,5 @@ body {
 
   .col-lg-fourth {
     width: 25%;
-  }
-}
-
-@media screen and (min-width: 576px) {
-  .col-sm-half {
-    width: 50%;
   }
 }
