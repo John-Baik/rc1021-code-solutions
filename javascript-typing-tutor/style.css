@@ -1,0 +1,26 @@
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: monospace, sans-serif;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
+.current {
+  border-bottom: solid;
+}
+
+span {
+  padding-bottom: 5px;
+}
