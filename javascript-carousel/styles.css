@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  border: 0.3rem solid;
+  width: 50vw;
+}
+
+.row1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.image {
+  width: 25vw;
+}
+
+.row2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.row3 {
+  margin: 1.5rem 0;
+}
+
+.row3 > i {
+  margin: 0 0.2rem;
+}
+
+.row1 > i {
+  font-size: 2.5rem;
+}
+
+.active {
+  font-weight: 600;
+}
+
+.hidden {
+  display: none;
+}
