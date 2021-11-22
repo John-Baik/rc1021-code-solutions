@@ -1,11 +1,38 @@
+function getRangeReport(start, end) {
+  var object = {};
+  var total = 0;
+  var odds = [];
+  var evens = [];
+  var range = [];
+  var average = 0;
+  for (start; start <= end; start++) {
+    range.push(start);
+  }
+  for (var i = 0; i < range.length; i++) {
+    total += range[i];
+    if (range[i] % 2 === 0) {
+      evens.push(range[i]);
+    } else {
+      odds.push(range[i]);
+    }
+  }
+  object.total = total;
+  object.odds = odds;
+  object.evens = evens;
+  average = total / range.length;
+  object.range = range;
+  object.average = average;
+  return object;
+}
+
 /* exported getNumbersToTen,
-            getEvenNumbersToTwenty,
-            repeatWord,
-            logEachCharacter,
-            doubleAll,
-            getKeys,
-            getValues
- */
+          getEvenNumbersToTwenty,
+          repeatWord,
+          logEachCharacter,
+          doubleAll,
+          getKeys,
+          getValues
+*/
 
 function getNumbersToTen() {
   var number = [];
