@@ -1,0 +1,457 @@
+    1  git config --global.user.name "John Baik"
+    2  git config --global.user.email "johnwbaik@gmail.com"
+    3  git config --global user.name "John Baik"
+    4  git config --global user.email "johnwbaik@gmail.com"
+    5  git config --global --list
+    6  http-messageshttp-messages
+    7  cd ~/repos/rc1021-code-solutions/http-messages
+    8  GET /https://example.com
+    9  GET https://example.com HTTP/1.1
+   10  GET https://learning-fuze.github.io/example/ HTTP/1.1
+   11  http GET https://example.com
+   12  --verbose, -v
+   13  http --verbose, -v
+   14  http --verbose https://example.com
+   15  http --body GET https://jsonplaceholder.typicode.com/users > users.json
+   16  http --body GET https://example.com > index.html
+   17  http GET https://valorant-api.com/v1/playercards
+   18  http GET https://valorant-api.com/v1/agents
+   19  http GET https://pokeapi.co/api/v2/pokemon
+   20  http GET https://api.pokemontcg.io/v2/cards?q=name:gardevoir
+   21  http GET https://api.disneyapi.dev/characters
+   22  cd ~/repos
+   23  git clone git@github.com:John-Baik/ajax-project.git
+   24  cd ajax-project
+   25  npm ci
+   26  git status
+   27  git pull origin master
+   28  git branch user-can-search-for-pokemon
+   29  git switch user-can-search-for-pokemon 
+   30  git switch master
+   31  git branch -D user-can-search-for-pokemon 
+   32  git branch issue-1-search-for-pokemon
+   33  git switch issue-1-search-for-pokemon 
+   34  git status
+   35  git add css/styles.css 
+   36  git add index.html 
+   37  git status
+   38  git commit -m "Create the header tab at the top in Html with proper CSS #1"
+   39  git push origin issue-1-search-for-pokemon 
+   40  git status
+   41  git add css/styles.css 
+   42  git add index.html 
+   43  git commit -m "Create body page content with header, empty search tab , submit button, and generate random Pokemon button. CSS included #1"
+   44  git push origin issue-1-search-for-pokemon 
+   45  git status
+   46  git add css/
+   47  git add css/styles.css 
+   48  git status
+   49  git commit -m "Make sure that all click targets show a cursor: pointer when hovered with the mouse. #1" 
+   50  git push origin issue-1-search-for-pokemon 
+   51  git status
+   52  git add css/layout.css 
+   53  git add css/styles.css
+   54  git status
+   55  git commit -m "Remove all CSS properties that have no effect. #1"
+   56  git status
+   57  git add css/layout.css
+   58  git add css/styles.css
+   59  git add index.html
+   60  git add js/main.js
+   61  git status
+   62  git commit -m "If user types in a Pokemon that doesn't exist, a popup will appear notifying user. #1"
+   63  git push origin issue-1-search-for-pokemon 
+   64  git status
+   65  git add css/layout.css 
+   66  git add css/styles.css 
+   67  git add index.html 
+   68  git add js/main.js 
+   69  git statsu
+   70  git status
+   71  git commit -m "If user types in a Pokemon that does exist, a new page will be shown displaying the Pokemon with all of it's stats #1"
+   72  git status
+   73  git add index.html 
+   74  git add js/main.js 
+   75  git commit -m "If user types in a Pokemon that does exist, a new page will be shown displaying the Pokemon with all of it's stats #1"
+   76  git push origin issue-1-search-for-pokemon 
+   77  git status
+   78  git add css/styles.css 
+   79  git add index.html 
+   80  git add js/main.js 
+   81  git status
+   82  git commit -m "User can click button to search for another Pokemon #1"
+   83  git status
+   84  git add status
+   85  git status
+   86  git add css/layout.css 
+   87  git add css/styles.css 
+   88  git add index.html 
+   89  git add js/main.js 
+   90  git status
+   91  git commit -m "Fix all bugs #1"
+   92  git push origin issue-1-search-for-pokemon 
+   93  git status
+   94  git add css/styles.css 
+   95  git commit -m "Confirm that the user interface looks natural on both mobile and desktop screens. #1"
+   96  git push origin issue-1-search-for-pokemon 
+   97  git commit -m "Create GIFs of the feature being used on both mobile and desktop screen sizes for inclusion in Pull Request #1"
+   98  git push origin issue-1-search-for-pokemon 
+   99  switch master
+  100  cd ~/repos/ajax
+  101  cd
+  102  cd ~/repos/ajax-project/
+  103  git switch mastee
+  104  git switch master
+  105  pwd
+  106  git branch issue-2-generate-random-pokemon
+  107  git switch issue-2-generate-random-pokemon 
+  108  git status
+  109  git add js/main.js 
+  110  git add index.html 
+  111  git status
+  112  git commit -m "Query Dom for Generate Random Pokemon button #2"
+  113  git push origin issue-2-generate-random-pokemon 
+  114  git status
+  115  git add js/main.js
+  116  git status
+  117  git commit -m "Hide search page and display new page with random pokemon image with it's stats #2"
+  118  git push origin issue-2-generate-random-pokemon 
+  119  git commit -m "Confirm that all previous functionality still works without errors. #2"
+  120  git status
+  121  git add css/layout.css
+  122  git add index.html
+  123  git add js/main.js 
+  124  git add js/data.js
+  125  git status
+  126  git commit -m "Query Dom for "Add to Collection" button. Add click Event Listener to save Pokemon and all of it's info into an object.  Push object into data object in main.js #3"
+  127  git commit -m "Push object into data object in main.js #3"
+  128  git status
+  129  git add js/main.js 
+  130  git commit -m "Push object into data object in main.js #3"
+  131  git branch issue-3-add-pokemon-to-collection
+  132  git switch issue-3-add-pokemon-to-collection 
+  133  git status 
+  134  git status
+  135  git commmit -m "Push object into data object in main.js #3"
+  136  git commit -m "Push object into data object in main.js #3"
+  137  git push origin issue-3-add-pokemon-to-collection 
+  138  git status
+  139  git add css/style.css
+  140  git add css/styles.css 
+  141  git add index.html 
+  142  git add js/ma
+  143  git add js/main.js 
+  144  git commit -m "Show all saved entries in collection page #3"
+  145  git status
+  146  git add index.html 
+  147  git add js/main.js 
+  148  git status
+  149  git commit -m "Show all saved entries in collection page #3"
+  150  git push origin issue-3-add-pokemon-to-collection 
+  151  git status
+  152  git add css/styles.css 
+  153  git add index.html 
+  154  git add js/main.js 
+  155  git status
+  156  git commit -m "Query Dom for the "Collection" anchor tag in the header and add a click event listener. Once clicked, the collection page will be displayed. #3"
+  157  git push origin issue-3-add-pokemon-to-collection 
+  158  cd/repos
+  159  cd ~/repos/ajax-project
+  160  git status
+  161  git add css/styles.css 
+  162  git add index.html 
+  163  git add js/main.js 
+  164  git status
+  165  git commit -m "If there are no saved Pokemon in Collection, a text notification will appear. #3"
+  166  git push origin issue-3-add-pokemon-to-collection 
+  167  git status
+  168  git add css/styles.css 
+  169  git commit -m "Remove all CSS properties that have no effect. #3"
+  170  git push origin issue-3-add-pokemon-to-collection 
+  171  git status
+  172  git add js/main.js 
+  173  git commit -m "Confirm that all previous functionality still works without errors. #3"
+  174  git push origin issue-3-add-pokemon-to-collection 
+  175  git branch issue-4-view-pokemon
+  176  git switch issue-4-view-pokemon 
+  177  git status
+  178  git add css/styles.css 
+  179  git add js/main.js 
+  180  git commit -m "Add Cursor: pointer to CSS when user hovers over "View" button #4"
+  181  git push origin issue-4-view-pokemon 
+  182  git status
+  183  git add js/data.js 
+  184  git sadd js/main.js
+  185  git add js/main.js 
+  186  git status
+  187  git commit -m "Query Dom for "View" button. Add click event listener. Once clicked, display search result page with the selected Pokemon. #4"
+  188  git status
+  189  git add js/main.js
+  190  git commit -m "Query Dom for "View" button. Add click event listener. Once clicked, display search result page with the selected Pokemon. #4"
+  191  git push origin issue-4-view-pokemon 
+  192  git status
+  193  git add js/main.js 
+  194  git commit -m "Query Dom for "Back to Collection" button and add click event Listener to go back to the collection page. #4"
+  195  git commit -m "Query Dom for "Back to Collection" button and add click event Listener to go back to the collection page. #4:
+  196  "
+  197  git status
+  198  git commit -m "Query Dom for "Back to Collection" button and add click event Listener to go back to the collection page. #4"
+  199  git commit -m "Query Dom for 'Back to Collection' button and add click event Listener to go back to the collection page. #4"
+  200  git push origin issue-4-view-pokemon 
+  201  git branch issue-5-delete-a-pokemon
+  202  git switch issue-5-delete-a-pokemon 
+  203  cd ~/repos/ajax-project
+  204  git status
+  205  git add css/style.css
+  206  git add css/styles.css 
+  207  git add index.html 
+  208  git add js/main.js 
+  209  git status
+  210  git commit -m "Create a confirmation modal that goes over collection page with Cancel and Delete buttons. #5"
+  211  git push origin issue-5-delete-a-pokemon 
+  212  git status
+  213  git add css/styles.css 
+  214  git add index.html
+  215  git commit -m "Style confirmation modal in CSS for both mobile and desktop #5"
+  216  git push origin issue-5-delete-a-pokemon 
+  217  git status
+  218  git add index.html 
+  219  git add js/main.js 
+  220  git commit -m "Use event delegation for Delete button and add event listener to display confirmation modal once Delete button is clicked. #5"
+  221  git push origin issue-5-delete-a-pokemon 
+  222  git status
+  223  git add js/main.js
+  224  git commit -m "Add event listener to Cancel button to return back to collection page. #5"
+  225  git push origin issue-5-delete-a-pokemon 
+  226  git status
+  227  git add js/data.js 
+  228  git add js/main.js 
+  229  git status
+  230  git commit -m "Add event listener to Delete button and remove Pokemon entry in collection. #5"
+  231  git push origin issue-5-delete-a-pokemon 
+  232  git status
+  233  git add js/main.js 
+  234  git commit -m "If all Pokemon are deleted, notification should appear without reloading. #5"
+  235  git status
+  236  git add css/layout.css 
+  237  git add css/styles.css 
+  238  git status
+  239  git commit -m "Confirm that all previous functionality still works without errors. #5"
+  240  git push origin issue-5-delete-a-pokemon 
+  241  cd ~/repos/ajax-project
+  242  git branch issue-6-user-cannot-duplicate-pokemon
+  243  git switch issue-6-user-cannot-duplicate-pokemon 
+  244  git status
+  245  git add index.html 
+  246  git add js/main.js 
+  247  git status
+  248  git commit -m "Create notification modal saying "Pokemon already in Collection" and a "Okay" Button. #6"
+  249  git push origin issue-6-user-cannot-duplicate-pokemon 
+  250  git status
+  251  git add css/styles.css 
+  252  git add index.html 
+  253  git add js/
+  254  git add js/data.js 
+  255  git add js/main.js 
+  256  git status
+  257  git commit -m "Update "Add to Collection Event Listener to display noticaition modal once clicked. #6"
+  258  git commit -m "Update 'Add to Collection' Event Listener to display noticaition modal once clicked. #6"
+  259  git commit -m "Update 'Add to Collection' Event Listener to display notification modal once clicked. #6"
+  260  git push origin issue-6-user-cannot-duplicate-pokemon 
+  261  git status
+  262  git branch issue-7-sort-in-alphabetical
+  263  git switch issue-7-sort-in-alphabetical 
+  264  git status
+  265  git add css/styles.css 
+  266  git add index.html 
+  267  git commit -m "Create the select form element in HTML #7"
+  268  git push origin issue-7-sort-in-alphabetical 
+  269  git status
+  270  git add css/styles.css 
+  271  git commit -m "Query Dom for A-Z option #7"
+  272  git commit --amend -m "Style in CSS #7"
+  273  git push origin issue-7-sort-in-alphabetical 
+  274  git status
+  275  git add css/layout.css 
+  276  git add index.html 
+  277  git add js/
+  278  git add js/main.js 
+  279  git status
+  280  git commit -m "Query Dom for A-Z option. Add an event listener to A-Z option. Once clicked, use .sort() to organize data.entries.name in alphabetical. #7"
+  281  git status
+  282  git add js/main.js 
+  283  git commit -m "Query Dom for A-Z option. Add an event listener to A-Z option. Once clicked, use .sort() to organize data.entries.name in alphabetical. #7"
+  284  git push origin issue-7-sort-in-alphabetical 
+  285  cd ~/repos/rc1021-code-solutions
+  286  git status
+  287  git pull origin master
+  288  cd ~/repos/ajax-project/
+  289  git switch master
+  290  git status
+  291  git pull origin master
+  292  cd ~/repos/rc1021-code-solutions
+  293  git pull origin master
+  294  git status
+  295  cd
+  296  cd ~/repos/rc1021-code-solutions
+  297  git branch es6-const-let
+  298  git switch es6-const-let 
+  299  git status
+  300  git add .
+  301  git status
+  302  git commit -m "Completed es6-const-let"
+  303  git commit -m "Completed es6-const-let" --no-verify
+  304  git push origin es6-const-let 
+  305  git switch master
+  306  git pull origin master
+  307  git branch es6-template-literals
+  308  git switch es6-template-literals 
+  309  git status
+  310  git switch master
+  311  git pull origin master
+  312  git switch es6-template-literals 
+  313  git status
+  314  git pull origin es6-const-let 
+  315  git status
+  316  git add es6-template-literals
+  317  git status
+  318  git add es6-template-literals
+  319  git status
+  320  git commit -m "Completed es6-template-literals"
+  321  git commit -m "Completed es6-template-literals" --no-verify
+  322  git push origin es6-template-literals 
+  323  git switch master
+  324  git pull origin master
+  325  git status
+  326  git switch master
+  327  git pull origin master
+  328  git branch es6-destructuring
+  329  git branch --list
+  330  git switch es6-destructuring 
+  331  git status
+  332  git add es6-destructuring
+  333  git status
+  334  git commit -m "Completed es6-destructuring"
+  335  git push origin es6-destructuring 
+  336  git switch master
+  337  git pull origin master
+  338  git status
+  339  git branch es6-arrow-functions
+  340  git switch es6-arrow-functions 
+  341  git status
+  342  git add es6-arrow-functions
+  343  git status
+  344  git commit -m "Completed es6-arrow-functions"
+  345  git push origin es6-arrow-functions 
+  346  git switch master
+  347  git pull origin master
+  348  cd
+  349  pwd
+  350  cd ~/repos/rc1021-code-solutions/command-line-basics
+  351  pwd
+  352  man man
+  353  man
+  354  man man
+  355  man cat
+  356  git status
+  357  man cat
+  358  -A
+  359  man cat
+  360  -A,
+  361  man cat
+  362  a
+  363  man cat
+  364  --show-all
+  365  man cat
+  366  cat laziness.txt 
+  367  cat impatience.txt 
+  368  cat hubris.txt 
+  369  cat laziness.txt impatience.txt hubris.txt
+  370  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+  371  cat three-virtues.txt 
+  372  man ls
+  373  ls
+  374  -a
+  375  man ls
+  376  ls -a
+  377  man ls
+  378  ls -f
+  379  man ls
+  380  ls -F
+  381  man ls
+  382  ls lfz-staff
+  383  ls lfz-staff -a
+  384  ls lfz-staff -F
+  385  man ls
+  386  ls -aF
+  387  ls lfz-staff -aF
+  388  ls lfz-staff/
+  389  ls lfz-staff/ -a
+  390  ls lfz-staff/ -F
+  391  ls lfz-staff/ -aF
+  392  ls -aF lfz-staff
+  393  ls -aF lfz-staff > lfz-staff/contents.txt
+  394  cat lfz-staff/contents.txt 
+  395  man pwd
+  396  pwd
+  397  pwd > i-was-here.txt
+  398  ls
+  399  cat i-was-here.txt 
+  400  man echo
+  401  echo 'Hello World'
+  402  echo 'Hello World!' > hello.txt
+  403  ls
+  404  cat hello.txt 
+  405  man echo
+  406  man touch
+  407  touch tag-youre-it.txt
+  408  ls
+  409  touch snoot/boop.txt
+  410  ls snoot/
+  411  man mkdir
+  412  mkdir parent
+  413  ls parent/
+  414  ls
+  415  mkdir -p parent/child/grandchild
+  416  ls
+  417  ls parent
+  418  ls parent/child
+  419  man touch
+  420  touch parent/child/grandchild/.gitkeep
+  421  man ls
+  422  ls -a
+  423  ls parent/child/grandchild
+  424  ls -a parent
+  425  ls -a parent/child
+  426  ls -a paret/child/grandchild
+  427  ls -a parent/child/grandchild
+  428  man mv
+  429  mv pokiemans
+  430  mv --help
+  431  man mv
+  432  mv pokiemans pokemon
+  433  ls
+  434  ls pokemon happy
+  435  mv pokemon happy
+  436  ls
+  437  mv happy pokemon
+  438  ls
+  439  man rm
+  440  ls
+  441  rm lol.txt
+  442  ls
+  443  man rm
+  444  rm -r kill me/
+  445  rm -r kill-me/
+  446  ls
+  447  man cp
+  448  cp and-then.txt no-and-then.txt
+  449  ls
+  450  cat 
+  451  man cat
+  452  cat and-then.txt no-and-then.txt
+  453  ls
+  454  man cat
+  455  man history
+  456  history
+  457  history > command-history.txt
