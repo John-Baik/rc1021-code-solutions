@@ -31,12 +31,12 @@ app.post('/api/notes', (req, res) => {
   const newNote = {};
   if (!body.content) {
     res.status(400).json({ error: 'content is a required field' });
-  } else {
-    newNote.id = data.nextId;
-    newNote.content = body.content;
-    notes[newNote.id] = newNote;
-    data.nextId++;
+    return;
   }
+  newNote.id = data.nextId;
+  newNote.content = body.content;
+  notes[newNote.id] = newNote;
+  data.nextId++;
   const stringify = JSON.stringify(data, null, 2);
   fs.writeFile('data.json', stringify, err => {
     if (err) {
@@ -50,13 +50,14 @@ app.post('/api/notes', (req, res) => {
 
 app.delete('/api/notes/:id', (req, res) => {
   const id = Number(req.params.id);
-  if (!id || id < 0) {
+  if (!id || id < 0 || Number.isInteger(id) === false) {
     res.status(400).json({ error: 'id must be a positive integer' });
+    return;
   } else if (!notes[id]) {
     res.status(404).json({ error: `cannot find note with id ${id}` });
-  } else {
-    delete notes[req.params.id];
+    return;
   }
+  delete notes[req.params.id];
   const stringify = JSON.stringify(data, null, 2);
   fs.writeFile('data.json', stringify, err => {
     if (err) {
@@ -71,15 +72,17 @@ app.delete('/api/notes/:id', (req, res) => {
 app.put('/api/notes/:id', (req, res) => {
   const id = Number(req.params.id);
   const body = req.body;
-  if (!id || id < 0) {
+  if (!id || id < 0 || Number.isInteger(id) === false) {
     res.status(400).json({ error: 'id must be a positive integer' });
+    return;
   } else if (!body.content) {
     res.status(400).json({ error: 'content is a required field' });
+    return;
   } else if (!notes[id]) {
     res.status(404).json({ error: `cannot find note with id ${id}` });
-  } else {
-    notes[id].content = body.content;
+    return;
   }
+  notes[id].content = body.content;
   const stringify = JSON.stringify(data, null, 2);
   fs.writeFile('data.json', stringify, err => {
     if (err) {
