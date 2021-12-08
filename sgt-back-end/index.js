@@ -35,11 +35,8 @@ app.post('/api/grades', (req, res) => {
   if (!body.name || !body.course || !body.score) {
     res.status(400).json({ error: 'Entry must contain a "name", "course", and "score"' });
     return;
-  } else if (!score || score > 100) {
+  } else if (!score || score < 0 || score > 100 || !Number.isInteger(score)) {
     res.status(400).json({ error: 'Invalid integer' });
-    return;
-  } else if (score <= 0) {
-    res.status(400).json({ error: 'Score must be a positive integer' });
     return;
   }
   const sql = `
@@ -50,7 +47,7 @@ app.post('/api/grades', (req, res) => {
   const values = [body.name, body.course, body.score];
   db.query(sql, values)
     .then(result => {
-      const grades = result.rows;
+      const grades = result.rows[0];
       res.status(201).json(grades);
     })
     .catch(error => {
@@ -70,7 +67,7 @@ app.put('/api/grades/:gradeId', (req, res) => {
   } else if (!body.name || !body.course || !body.score) {
     res.status(400).json({ error: 'Entry must contain a name, course, and score' });
     return;
-  } else if (!score) {
+  } else if (!score || score < 0 || score > 100 || !Number.isInteger(score)) {
     res.status(400).json({ error: 'Invalid integer' });
     return;
   }
@@ -101,7 +98,7 @@ app.put('/api/grades/:gradeId', (req, res) => {
 
 app.delete('/api/grades/:gradeId', (req, res) => {
   const id = Number(req.params.gradeId);
-  if (!id || id < 0) {
+  if (!id || id < 0 || !Number.isInteger(id)) {
     res.status(400).json({ error: 'Invalid id' });
     return;
   }
