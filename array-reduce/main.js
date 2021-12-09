@@ -27,8 +27,6 @@ console.log('product: ', product);
 
 const total = (accumulator, currentValue) => {
   if (currentValue.type === 'deposit') {
-    console.log('accumulator: ', accumulator);
-    console.log('currentValue.amount: ', currentValue.amount);
     return accumulator + currentValue.amount;
   } else if (currentValue.type === 'withdrawal') {
     return accumulator - currentValue.amount;
