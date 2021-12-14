@@ -1,0 +1,41 @@
+.fullContainer {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  border-radius: 50px;
+  width: 60px;
+  border-style: solid;
+}
+
+.circle {
+  position: relative;
+  right: 2px;
+  width: 25px;
+  border-style: solid;
+  height: 25px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.containerOn {
+  background-color: green;
+  border-radius: 50px;
+  width: 60px;
+  border-style: solid;
+}
+
+.circleOn {
+  position: relative;
+  left: 34px;
+  width: 25px;
+  border-style: solid;
+  height: 25px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.status {
+  margin-left: 1rem;
+}
