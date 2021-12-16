@@ -1,0 +1,32 @@
+#root {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.full-container {
+  border-style: solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 40%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemon {
+  width: 50%;
+}
+
+.buttons {
+  display: flex;
+  gap: 0.4rem;
+  justify-content: center;
+  margin: 1.2rem 0;
+}
