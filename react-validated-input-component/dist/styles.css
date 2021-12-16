@@ -8,11 +8,11 @@
   flex-direction: row;
 }
 
-.fa-check {
+.text-green {
   color: greenyellow;
 }
 
-.fa-times {
+.text-red {
   color: red;
 }
 

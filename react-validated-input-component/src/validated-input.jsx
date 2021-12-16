@@ -16,8 +16,7 @@ class Password extends React.Component {
   handleChange(event) {
     const value = event.target.value;
     this.setState({ password: value });
-    const password = event.target.value;
-    const length = password.length;
+    const length = value.length;
     if (length === 0) {
       this.setState({
         status: false,
@@ -43,7 +42,7 @@ class Password extends React.Component {
         <label className="title" htmlFor="password">Password</label>
         <div className="box">
           <input onChange={this.handleChange} type="text" name="password" id="password"></input>
-            <i className={this.state.status ? 'fas fa-check' : 'fas fa-times'}></i>
+            <i className={this.state.status ? 'fas fa-check text-green' : 'fas fa-times text-red'}></i>
         </div>
         <div className="notification">
           <p className="message">{this.state.message}</p>
