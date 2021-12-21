@@ -9,9 +9,10 @@ const pokedex = [
   { number: '039', name: 'Jigglypuff' }
 ];
 
-const listItems = pokedex.map(pokemon =>
+const listItems = pokedex.map(pokemon => (
   <li key={pokemon.number}>
-    {pokemon.name}</li>);
+    {pokemon.name}</li>
+));
 
 const element = <ul>{listItems}</ul>;
 
