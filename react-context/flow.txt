@@ -6,7 +6,10 @@ When the user inputs a username and password into the website, the handleChange 
 User can sign in
 Once users click login after inputting their username and password, handleSubmit is called in auth-form.jsx’s class constructor. A request to the server is made using fetch with method set to ‘post’. In the server index.js, the code goes through the json.use middleware and runs app.post. App.post then checks if the inputted username exists within the database using sql select. It then hashes the inputted password and uses argon2.verify to compare if the hashed password matches the hashed password in the database. If it matches, then a payload is created and jwt.sign is used to assign a special token to the user. Res.json is then used to parse the token and user to an object.
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> cc7b225f82a6de75c353e3ecd77b4d3e385b5715
 User can stay signed in (even if they refresh the page).
 In handleSignin of app.jsx, user and token is stored in local storage
 
