@@ -1,0 +1,13 @@
+
+User can sign up
+An AuthForm class constructor is created in auth-form.jsx. Within the constructor, the this.state username and password are set to an empty string.
+When the user inputs a username and password into the website, the handleChange method is called and the inputs are saved in a new keyvalue pair in this.state labeled as name. Once the user clicks Register, the handleSubmit method is called which makes a request to the server using fetch with method set to ‘POST’. In the server index.js, the username and password are stored in the data base using sql insert with the password being hashed using argon2.
+
+User can sign in
+Once users click login after inputting their username and password, handleSubmit is called in auth-form.jsx’s class constructor. A request to the server is made using fetch with method set to ‘post’. In the server index.js, the code goes through the json.use middleware and runs app.post. App.post then checks if the inputted username exists within the database using sql select. It then hashes the inputted password and uses argon2.verify to compare if the hashed password matches the hashed password in the database. If it matches, then a payload is created and jwt.sign is used to assign a special token to the user. Res.json is then used to parse the token and user to an object.
+
+User can stay signed in (even if they refresh the page).
+In handleSignin of app.jsx, user and token is stored in local storage
+
+User can sign out.
+Once user clicks sing out, handleSignOut of app.jsx is called. It removed the react-context-jwt item in local storage and set state user: to null to reset user.
