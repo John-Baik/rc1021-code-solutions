@@ -3,7 +3,6 @@ function isPalindromic(string) {
   var reverse = '';
   var word = string.split(' ');
   var fullWord = word.join('');
-  console.log(fullWord);
   for (var i = string.length - 1; i >= 0; i--) {
     if (string[i] !== ' ') {
       reverse += string[i];
